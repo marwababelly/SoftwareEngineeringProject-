@@ -1,4 +1,4 @@
-export const BASE_URL = "https://software-engineering-project-api.com/"; // api base url
+export const BASE_URL = "https://software-engineering-project2.onrender.com/"; // api base url
 
 export const BASE_ONLINE_URL = "https://software-engineering-project.com/"; // website base url
 

@@ -5,7 +5,7 @@ import CustomerForm from "./forms/customers.form";
 import {
   TRenderBodyAction,
   TRenderHeadAction,
-} from "../../components/base/Table/table.component";
+} from "../../components/base/table/table.component";
 import carApi from "../../apis/car/car.api";
 
 export type ICustomer = {

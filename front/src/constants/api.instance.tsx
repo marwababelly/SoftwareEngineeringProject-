@@ -1,7 +1,6 @@
 import axios from "axios";
 import { API_BASE_URL } from "./domain";
 import useUserStore from "../zustand/user/user.store";
-import Loading from "../components/base/loading/loading";
 
 const ApiInstance = axios.create({
   baseURL: API_BASE_URL,
@@ -9,7 +8,6 @@ const ApiInstance = axios.create({
 
 ApiInstance.interceptors.request.use(
   (config) => {
-    <Loading />;
     if (config.headers) {
       const token = useUserStore.getState().userInfo?.token;
       if (token) config.headers.Authorization = token;
