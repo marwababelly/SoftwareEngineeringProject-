@@ -1,13 +1,13 @@
-function genericResponse(
-  data,
+function genericResponse({
+  data = null,
   pageSize = 6,
   pageNum = 0,
   totalRecords = 0,
   totalPagesCount = 0,
   hasNextPage = false,
   errorMessage = null,
-  errors = null
-) {
+  errors = null,
+}) {
   return {
     data,
     pageSize,
